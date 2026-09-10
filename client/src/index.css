@@ -153,6 +153,11 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
 .filter-note { display: inline-flex; align-items: center; gap: 7px; margin-left: auto; padding-bottom: 13px; color: #8a847e; font-size: 9px; letter-spacing: .08em; }
 .filter-note svg { color: var(--signal); }
 .mod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 13px; margin-top: 19px; }
+.pack-tabs { display: flex; align-items: center; gap: 0; margin-top: 58px; border-bottom: 1px solid rgba(16,16,16,.22); }
+.pack-tab { position: relative; padding: 14px 22px 14px 0; margin-right: 29px; background: transparent; color: #8a847e; font-size: 10px; font-weight: 800; letter-spacing: .13em; cursor: pointer; }
+.pack-tab span { margin-left: 6px; color: #b4ada5; font: 400 10px "DM Sans", sans-serif; }
+.pack-tab.active { color: var(--ink); }
+.pack-tab.active::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 3px; background: var(--signal); }
 .pack-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 13px; margin-top: 48px; }
 .pack-card { min-height: 310px; padding: 22px 24px 18px; display: flex; flex-direction: column; color: var(--paper); background: var(--ink); border: 1px solid rgba(241,238,232,.14); transition: transform .18s ease, box-shadow .18s ease; }
 .pack-card.red { color: var(--paper); background: var(--signal); }
@@ -171,6 +176,9 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
 .pack-card-footer button { display: inline-flex; align-items: center; gap: 6px; padding: 10px 11px; background: var(--signal); color: var(--paper); font-size: 9px; font-weight: 800; letter-spacing: .11em; cursor: pointer; transition: background .18s ease, color .18s ease; }
 .pack-card.red .pack-card-footer button { background: var(--ink); }
 .pack-card-footer button:hover { background: var(--paper); color: var(--ink); }
+.pack-link { display: inline-flex; align-items: center; gap: 6px; padding: 10px 11px; background: var(--signal); color: var(--paper); font-size: 9px; font-weight: 800; letter-spacing: .11em; transition: background .18s ease, color .18s ease; }
+.pack-card.red .pack-link { background: var(--ink); }
+.pack-link:hover { background: var(--paper); color: var(--ink); }
 .mod-card { min-height: 220px; padding: 18px 20px 16px; display: flex; flex-direction: column; background: #e9e5df; border: 1px solid rgba(16,16,16,.12); transition: background .18s ease, transform .18s ease, box-shadow .18s ease; }
 .mod-card:hover { background: var(--ink); color: var(--paper); transform: translate(-3px,-4px); box-shadow: 7px 8px 0 var(--signal); }
 .mod-card-top, .mod-card-footer { display: flex; align-items: center; justify-content: space-between; }
@@ -275,7 +283,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
   .section-heading-row { display: block; }
   .section-title { font-size: 86px; }
   .section-intro { margin-top: 28px; }
-  .filter-bar { overflow-x: auto; margin-top: 46px; }
+  .filter-bar, .pack-tabs { overflow-x: auto; margin-top: 46px; }
+  .pack-tab { flex: 0 0 auto; margin-right: 21px; }
   .filter-button { flex: 0 0 auto; margin-right: 21px; }
   .filter-note { display: none; }
   .mod-grid { grid-template-columns: 1fr; gap: 10px; }
