@@ -212,7 +212,7 @@ export default function Home() {
         <div className="credits-grid">
           <div className="credit-main"><span>CREATOR / 001</span><strong>BOOM</strong><p>Pembuat modpack · FPS tuning · Mobile optimization</p></div>
           <div className="credit-list">
-            <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
+            <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/LOmao5V0N3qBncbMogwK21?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
             <div><span>YOUTUBE</span><a className="contact-value" href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">@BOOMDZ1 ↗</a></div>
             <div><span>TIKTOK</span><a className="contact-value" href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">@WHATBOOM_ ↗</a></div>
           </div>
