@@ -222,6 +222,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
 .credit-list { display: grid; gap: 0; }
 .credit-list div { display: flex; justify-content: space-between; gap: 20px; padding: 14px 0; border-top: 1px solid var(--line); }
 .credit-list strong { font: 800 16px/.9 "Barlow Condensed", sans-serif; text-align: right; }
+.contact-value { color: var(--paper); background: transparent; padding: 0; font: 800 16px/.9 "Barlow Condensed", sans-serif; text-align: right; cursor: pointer; transition: color .18s ease; }
+.contact-value:hover { color: var(--signal); }
 .final-cta { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 32px; border-top: 1px solid var(--line); }
 .final-cta > div { display: inline-flex; align-items: center; gap: 10px; color: var(--paper-muted); font-size: 9px; font-weight: 700; letter-spacing: .15em; }
 .site-footer { display: flex; align-items: center; justify-content: space-between; min-height: 100px; padding-block: 23px; border-top: 1px solid var(--line); color: var(--paper-muted); }

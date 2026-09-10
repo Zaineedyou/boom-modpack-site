@@ -201,27 +201,23 @@ export default function Home() {
 
       <section id="credits" className="credits-section section-pad site-container">
         <div className="credits-header">
-          <div className="section-tag"><span>05</span> PROFIL BOOM</div>
-          <h2 className="section-title">PEMBUAT<br /><em>MODPACK</em><br />BOOM.</h2>
+          <div className="section-tag"><span>05</span> CONTACT</div>
+          <h2 className="section-title">TEMUKAN<br /><em>BOOM</em><br />DI SINI.</h2>
         </div>
         <div className="credits-grid">
           <div className="credit-main"><span>CREATOR / 001</span><strong>BOOM</strong><p>Pembuat modpack · FPS tuning · Mobile optimization</p></div>
           <div className="credit-list">
-            <div><span>FOCUS UTAMA</span><strong>FPS BOOST</strong></div>
-            <div><span>PLATFORM</span><strong>ZALITH · POJAV · MOJO</strong></div>
-            <div><span>STATUS</span><strong>BUILDS IN PROGRESS</strong></div>
+            <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
+            <div><span>INSTAGRAM</span><button className="contact-value" onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>COMING SOON ↗</button></div>
+            <div><span>TIKTOK</span><button className="contact-value" onClick={() => handlePlaceholder("TIKTOK BOOM")}>COMING SOON ↗</button></div>
           </div>
-        </div>
-        <div className="final-cta">
-          <div><span className="status-dot" /> MODPACK V13 / V26.2 / READY</div>
-          <button className="button-primary" onClick={handleDownload}>BUKA KATALOG MODPACK <ArrowUpRight className="size-4" /></button>
         </div>
       </section>
 
       <footer className="site-footer site-container">
         <div className="footer-brand">BOOM<span>.</span><small>DICIPTAKAN OLEH BOOM</small></div>
         <p>CREATOR / BOOM / PERFORMANCE MODPACK / 2026</p>
-        <div className="footer-links"><button onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>IG</button><button onClick={() => handlePlaceholder("TIKTOK BOOM")}>TIKTOK</button><button onClick={() => handlePlaceholder("SALURAN WHATSAPP")}>SALURAN WA</button><button onClick={() => handlePlaceholder("GRUP COMMUNITY")}>COMMUNITY</button><a href="#top">BACK TO TOP ↑</a></div>
+        <div className="footer-links"><button onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>IG</button><button onClick={() => handlePlaceholder("TIKTOK BOOM")}>TIKTOK</button><a href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">COMMUNITY WA</a><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </main>
   );
