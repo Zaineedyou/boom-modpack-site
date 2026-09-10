@@ -15,7 +15,7 @@ import {
   X,
 } from "lucide-react";
 
-const STORAGE = "/manus-storage";
+const STORAGE = "/assets";
 
 const packCategories = [
   { key: "modpack", label: "MODPACK", count: "08" },
@@ -108,7 +108,7 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-visual" aria-hidden="true">
-              <img src={`${STORAGE}/boom-glyph_0fefc5df.png`} alt="" className="boom-glyph" />
+              <img src={`${STORAGE}/boom-glyph.png`} alt="" className="boom-glyph" />
               <div className="glyph-label">PERF /<br />FIRST</div>
               <div className="glyph-crosshair crosshair-a" />
               <div className="glyph-crosshair crosshair-b" />
@@ -188,7 +188,7 @@ export default function Home() {
         <div className="site-container texture-layout">
           <div className="texture-art">
             <div className="texture-art-grid" />
-            <img src={`${STORAGE}/boom-glyph_0fefc5df.png`} alt="" />
+            <img src={`${STORAGE}/boom-glyph.png`} alt="" />
             <div className="texture-stamp">TEXTURE<br />PACK<br /><strong>WIP</strong></div>
           </div>
           <div className="texture-copy">
