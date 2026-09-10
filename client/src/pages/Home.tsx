@@ -100,11 +100,10 @@ export default function Home() {
             <div className="hero-copy">
               <p className="side-index">01 <span>/</span> 04</p>
               <h1 className="hero-title reveal-in delay-1">BOOM<span className="title-period">.</span></h1>
-              <p className="hero-subtitle reveal-in delay-2">FPS naik tinggi.<br /><em>Main makin lama.</em></p>
+              <p className="hero-subtitle reveal-in delay-2">FPS naik tinggi.<br /><em>Main makin nyaman.</em></p>
               <p className="hero-description reveal-in delay-3">Boom adalah kumpulan modpack Minecraft yang dirancang untuk boost FPS setinggi mungkin di Zalith Launcher, Pojav Launcher, Mojo Launcher, dan launcher mobile lainnya.</p>
               <div className="hero-actions reveal-in delay-3">
                 <button className="button-primary" onClick={handleDownload}>LIHAT SEMUA MODPACK <ArrowDownRight className="size-4" /></button>
-                <a className="button-ghost" href="#contents">PILIH PACK <ArrowDownRight className="size-4" /></a>
               </div>
             </div>
             <div className="hero-visual" aria-hidden="true">
@@ -213,7 +212,7 @@ export default function Home() {
         <div className="credits-grid">
           <div className="credit-main"><span>CREATOR / 001</span><strong>BOOM</strong><p>Pembuat modpack · FPS tuning · Mobile optimization</p></div>
           <div className="credit-list">
-            <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
+            <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/LOmao5V0N3qBncbMogwK21?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
             <div><span>YOUTUBE</span><a className="contact-value" href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">@BOOMDZ1 ↗</a></div>
             <div><span>TIKTOK</span><a className="contact-value" href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">@WHATBOOM_ ↗</a></div>
           </div>
@@ -222,7 +221,7 @@ export default function Home() {
 
       <footer className="site-footer site-container">
         <div className="footer-brand">BOOM<span>.</span><small>DICIPTAKAN OLEH BOOM</small></div>
-        <a className="footer-credit" href="https://github.com/Zaineedyou/boom-modpack-site" target="_blank" rel="noreferrer">ARR · © 2026 BOOM · BUILT BY ZAINEEDYOU</a>
+        <a className="footer-credit" href="https://github.com/Zaineedyou" target="_blank" rel="noreferrer">© 2026 BOOM. All Rights Reserved. Built by Zaineedyou</a>
         <div className="footer-links"><a href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">YOUTUBE</a><a href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">TIKTOK</a><a href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">COMMUNITY WA</a><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </main>
