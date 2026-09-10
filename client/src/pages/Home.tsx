@@ -18,23 +18,30 @@ import {
 const STORAGE = "/manus-storage";
 
 const packCategories = [
-  { key: "modpack", label: "MODPACK", count: "01" },
-  { key: "texture", label: "TEXTURE PACK", count: "01" },
-  { key: "shader", label: "SHADERPACK", count: "01" },
+  { key: "modpack", label: "MODPACK", count: "08" },
+  { key: "texture", label: "TEXTURE PACK", count: "03" },
+  { key: "shader", label: "SHADERPACK", count: "02" },
 ] as const;
 
 const packs = {
   modpack: [
     { name: "MODPACK V13 BY BOOM", description: "Versi 26.2 untuk dorong FPS setinggi mungkin di mobile launcher. Dibuat untuk main survival tanpa kompromi performa.", badge: "MODPACK", meta: "V26.2 / LOADER 0.19.3 / RUNTIME 25", tone: "dark", link: "https://www.mediafire.com/file/pdxgi2gdyk9wuvr/MP+26.2+FPS×SURVIVAL.zip/file", placeholder: false },
-    { name: "MODPACK V14 BY BOOM", description: "Slot modpack berikutnya akan diisi setelah build baru siap diuji.", badge: "MODPACK", meta: "COMING SOON", tone: "dark", link: "#", placeholder: true },
+    { name: "BS CATALYST BY STEYNN×BOOM", description: "Modpack kolaborasi Steynn×Boom untuk pengalaman Minecraft mobile yang lebih optimal.", badge: "MODPACK", meta: "V26.1.2 / DRIVE", tone: "red", link: "https://drive.google.com/file/d/1H96sdA-eBZbUMCeC3KK-MFs68DpdJx9d/view?usp=drivesdk", placeholder: false },
+    { name: "FPS BOOST×SURVIVAL", description: "Build FPS dan survival untuk semua launcher dengan format mrpack yang praktis.", badge: "MODPACK", meta: "V1.21.11 / LOADER 0.19.3 / ALL LAUNCHER", tone: "dark", link: "https://www.mediafire.com/file/jpfuvvk53pmef3c/1.21.11+FPS×SURIVAL.mrpack/file", placeholder: false },
+    { name: "SURVIVAL LIVE BOOM", description: "Modpack survival yang sering dipakai Boom di live sekarang. Disclaimer: cukup berat untuk HP dengan chipset Helio G100 ke bawah.", badge: "MODPACK", meta: "SURVIVAL / DRIVE", tone: "red", link: "https://drive.google.com/file/d/110rOxsXlIAvMy2B0MuWjoy5bR36a2MuH/view?usp=drivesdk", placeholder: false },
+    { name: "MODPACK V11", description: "Build klasik Boom dengan konfigurasi render mobile dan runtime yang spesifik.", badge: "MODPACK", meta: "V1.21 / LOADER 0.19.3 / RUNTIME 21 / MG-LTW", tone: "dark", link: "https://www.mediafire.com/file/zywlszjvl9ch06x/MODPACK+V11+1.21.zip/file", placeholder: false },
+    { name: "MODPACK V12 BY BOOM", description: "Versi 12 gratis untuk Minecraft 26.1.2, siap diunduh dari MediaFire.", badge: "MODPACK", meta: "V26.1.2 / MEDIAFIRE", tone: "red", link: "https://www.mediafire.com/file/w7s9xcdlukcr8o8/MP+FREE+V12+26.1.2.zip/file", placeholder: false },
+    { name: "MODPACK V9 BY BOOM", description: "Modpack Boom untuk Minecraft 1.21.11 dengan fokus survival dan performa.", badge: "MODPACK", meta: "V1.21.11 / MEDIAFIRE", tone: "dark", link: "https://www.mediafire.com/file/yw53p9ldfml6u8w/Modpack+1.21.11+v9+by+boom.zip/file", placeholder: false },
+    { name: "MODPACK SODIUM V6 BY BOOM", description: "Build berbasis Sodium untuk pengalaman FPS yang lebih ringan dan responsif.", badge: "MODPACK", meta: "V6 / MEDIAFIRE", tone: "red", link: "https://www.mediafire.com/file/ymyh2ebdtgobo4k/Modpack+Sodium+V6+by+Boom.zip/file", placeholder: false },
   ],
   texture: [
-    { name: "BOOM//PIXEL", description: "Texture pack ringan dengan visual bersih, kontras resource jelas, dan beban render tetap rendah.", badge: "TEXTURE PACK", meta: "WIP / 16×16", tone: "red", link: "#", placeholder: true },
-    { name: "BOOM//PIXEL V2", description: "Eksperimen visual berikutnya untuk tampilan mobile yang lebih tajam.", badge: "TEXTURE PACK", meta: "COMING SOON", tone: "red", link: "#", placeholder: true },
+    { name: "TXT BOOM 1.21.11", description: "Texture pack untuk versi 1.21.11 sampai 26.2. Masih work untuk rentang versi tersebut.", badge: "TEXTURE PACK", meta: "V1.21.11 — V26.2", tone: "red", link: "https://www.mediafire.com/file/nq579zbbsmlfp9w/TXT+1.21.11-26.2+BY+BOOM.zip/file", placeholder: false },
+    { name: "TXT SURVIVAL BOOM", description: "Texture pack yang dipakai bersama modpack Survival Live Boom.", badge: "TEXTURE PACK", meta: "V1.21.11 / MEDIAFIRE", tone: "dark", link: "https://www.mediafire.com/file/zq81rpgh7jbzl7c/TXT+BOOM+1.21.11.zip/file", placeholder: false },
+    { name: "BOOM//PIXEL", description: "Eksperimen visual berikutnya untuk tampilan mobile yang lebih tajam.", badge: "TEXTURE PACK", meta: "COMING SOON", tone: "red", link: "#", placeholder: true },
   ],
   shader: [
-    { name: "BOOM LITE SHADER", description: "Shader ringan untuk menambah atmosfer tanpa mengorbankan target FPS mobile.", badge: "SHADERPACK", meta: "COMING SOON", tone: "dark", link: "#", placeholder: true },
-    { name: "BOOM MOBILE FX", description: "Preset shader khusus launcher Android yang masih dalam tahap riset dan tuning.", badge: "SHADERPACK", meta: "COMING SOON", tone: "dark", link: "#", placeholder: true },
+    { name: "DERIVATIVE EDIT BY BOOM", description: "Shaderpack Derivative Edit by Boom — ekstra untuk menambah karakter visual Minecraft.", badge: "SHADERPACK", meta: "MEDIAFIRE", tone: "dark", link: "https://www.mediafire.com/file/3qldntrh7qrt3lj/SHEDER+BOOM,+EKSTRA+DULU.zip/file", placeholder: false },
+    { name: "BOOM MOBILE FX", description: "Preset shader khusus launcher Android yang masih dalam tahap riset dan tuning.", badge: "SHADERPACK", meta: "COMING SOON", tone: "red", link: "#", placeholder: true },
   ],
 };
 
@@ -208,8 +215,8 @@ export default function Home() {
           <div className="credit-main"><span>CREATOR / 001</span><strong>BOOM</strong><p>Pembuat modpack · FPS tuning · Mobile optimization</p></div>
           <div className="credit-list">
             <div><span>COMMUNITY</span><a className="contact-value" href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">WHATSAPP GROUP ↗</a></div>
-            <div><span>INSTAGRAM</span><button className="contact-value" onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>COMING SOON ↗</button></div>
-            <div><span>TIKTOK</span><button className="contact-value" onClick={() => handlePlaceholder("TIKTOK BOOM")}>COMING SOON ↗</button></div>
+            <div><span>YOUTUBE</span><a className="contact-value" href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">@BOOMDZ1 ↗</a></div>
+            <div><span>TIKTOK</span><a className="contact-value" href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">@WHATBOOM_ ↗</a></div>
           </div>
         </div>
       </section>
@@ -217,7 +224,7 @@ export default function Home() {
       <footer className="site-footer site-container">
         <div className="footer-brand">BOOM<span>.</span><small>DICIPTAKAN OLEH BOOM</small></div>
         <p>CREATOR / BOOM / PERFORMANCE MODPACK / 2026</p>
-        <div className="footer-links"><button onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>IG</button><button onClick={() => handlePlaceholder("TIKTOK BOOM")}>TIKTOK</button><a href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">COMMUNITY WA</a><a href="#top">BACK TO TOP ↑</a></div>
+        <div className="footer-links"><a href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">YOUTUBE</a><a href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">TIKTOK</a><a href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">COMMUNITY WA</a><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </main>
   );
