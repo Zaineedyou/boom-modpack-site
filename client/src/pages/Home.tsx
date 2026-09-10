@@ -100,11 +100,10 @@ export default function Home() {
             <div className="hero-copy">
               <p className="side-index">01 <span>/</span> 04</p>
               <h1 className="hero-title reveal-in delay-1">BOOM<span className="title-period">.</span></h1>
-              <p className="hero-subtitle reveal-in delay-2">FPS naik tinggi.<br /><em>Main makin lama.</em></p>
+              <p className="hero-subtitle reveal-in delay-2">FPS naik tinggi.<br /><em>Main makin nyaman.</em></p>
               <p className="hero-description reveal-in delay-3">Boom adalah kumpulan modpack Minecraft yang dirancang untuk boost FPS setinggi mungkin di Zalith Launcher, Pojav Launcher, Mojo Launcher, dan launcher mobile lainnya.</p>
               <div className="hero-actions reveal-in delay-3">
                 <button className="button-primary" onClick={handleDownload}>LIHAT SEMUA MODPACK <ArrowDownRight className="size-4" /></button>
-                <a className="button-ghost" href="#contents">PILIH PACK <ArrowDownRight className="size-4" /></a>
               </div>
             </div>
             <div className="hero-visual" aria-hidden="true">
