@@ -1,10 +1,9 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { toast } from "sonner";
 import {
   ArrowDownRight,
   ArrowUpRight,
   Check,
-  ChevronRight,
   Cpu,
   Download,
   Gauge,
@@ -14,49 +13,20 @@ import {
   Minus,
   MousePointer2,
   Radio,
-  Sparkles,
   X,
-  Zap,
 } from "lucide-react";
 
 const STORAGE = "/manus-storage";
 
-type Mod = {
-  name: string;
-  description: string;
-  category: "system" | "world" | "visuals";
-  badge: string;
-};
-
-const mods: Mod[] = [
-  { name: "Sodium", description: "Render pipeline yang lebih tajam tanpa drama.", category: "system", badge: "CORE" },
-  { name: "Lithium", description: "Tick logic dipangkas. Dunia bergerak lebih ringan.", category: "system", badge: "CORE" },
-  { name: "FerriteCore", description: "RAM footprint lebih kecil, ruang main lebih lega.", category: "system", badge: "MEM" },
-  { name: "ModernFix", description: "Fix yang terasa sebelum kamu sempat mengeluh.", category: "system", badge: "FIX" },
-  { name: "Terralith", description: "Terrain baru, budget performa tetap waras.", category: "world", badge: "WORLD" },
-  { name: "YUNG's Suite", description: "Struktur vanilla yang akhirnya pantas difoto.", category: "world", badge: "WORLD" },
-  { name: "Entity Culling", description: "Kalau tidak terlihat, tidak perlu dirender.", category: "visuals", badge: "FPS" },
-  { name: "ImmediatelyFast", description: "UI dan partikel bergerak tanpa menahan napas.", category: "visuals", badge: "FPS" },
-  { name: "BOOM//PIXEL", description: "Texture pass eksperimental. Detail naik, noise turun.", category: "visuals", badge: "PACK" },
+const packs = [
+  { name: "BOOM PERFORMANCE", description: "Modpack utama untuk dunia Minecraft yang lebih responsif, ringan, dan tetap seru dijelajahi.", badge: "MODPACK", meta: "BUILD 00.1", tone: "dark" },
+  { name: "BOOM//PIXEL", description: "Texture pack eksperimental dengan detail lebih bersih dan kontras yang lebih mudah dibaca.", badge: "TEXTURE PACK", meta: "WIP / 16×16", tone: "red" },
 ];
-
-const filters = [
-  { key: "all", label: "SEMUA", count: "09" },
-  { key: "system", label: "SYSTEM", count: "04" },
-  { key: "world", label: "WORLD", count: "02" },
-  { key: "visuals", label: "VISUALS", count: "03" },
-] as const;
 
 const tickerItems = ["LESS LAG", "MORE WORLD", "NO BLOAT", "JUST PLAY"];
 
 export default function Home() {
-  const [activeFilter, setActiveFilter] = useState<(typeof filters)[number]["key"]>("all");
   const [menuOpen, setMenuOpen] = useState(false);
-
-  const visibleMods = useMemo(
-    () => activeFilter === "all" ? mods : mods.filter((mod) => mod.category === activeFilter),
-    [activeFilter],
-  );
 
   const handleDownload = () => {
     toast("BUILD 00.1 MASIH DI LAB", {
@@ -164,26 +134,18 @@ export default function Home() {
           <div className="section-heading-row">
             <div>
               <div className="section-tag"><span>03</span> THE LOADOUT</div>
-              <h2 className="section-title">ISI <em>BOOM</em></h2>
+              <h2 className="section-title">LIST <em>BOOM</em></h2>
             </div>
-            <p className="section-intro">Setiap mod punya pekerjaan. Tidak ada penumpang gelap. Daftar di bawah adalah placeholder curated list untuk versi pertama.</p>
+            <p className="section-intro">Pilih paket yang ingin kamu cek. Link download dan halaman detail masih placeholder untuk versi pertama.</p>
           </div>
-          <div className="filter-bar" role="tablist" aria-label="Filter isi modpack">
-            {filters.map((filter) => (
-              <button key={filter.key} className={`filter-button ${activeFilter === filter.key ? "active" : ""}`} onClick={() => setActiveFilter(filter.key)} role="tab" aria-selected={activeFilter === filter.key}>
-                {filter.label} <span>{filter.count}</span>
-              </button>
-            ))}
-            <span className="filter-note"><Sparkles className="size-3" /> 09 MODULES / 01 MISSION</span>
-          </div>
-          <div className="mod-grid">
-            {visibleMods.map((mod, index) => (
-              <article className="mod-card" key={mod.name}>
-                <div className="mod-card-top"><span className="mod-number">0{mods.indexOf(mod) + 1}</span><span className="mod-badge">{mod.badge}</span></div>
-                <div className="mod-icon"><Zap className="size-5" /></div>
-                <h3>{mod.name}</h3>
-                <p>{mod.description}</p>
-                <div className="mod-card-footer"><span>{mod.category.toUpperCase()}</span><ChevronRight className="size-4" /></div>
+          <div className="pack-grid">
+            {packs.map((pack, index) => (
+              <article className={`pack-card ${pack.tone}`} key={pack.name}>
+                <div className="pack-card-top"><span className="mod-number">0{index + 1}</span><span className="mod-badge">{pack.badge}</span></div>
+                <div className="pack-icon"><Layers3 className="size-5" /></div>
+                <h3>{pack.name}</h3>
+                <p>{pack.description}</p>
+                <div className="pack-card-footer"><span>{pack.meta}</span><button onClick={() => handlePlaceholder(`${pack.name} LINK`)}>OPEN LINK <ArrowUpRight className="size-3.5" /></button></div>
               </article>
             ))}
           </div>
@@ -232,9 +194,9 @@ export default function Home() {
       </section>
 
       <footer className="site-footer site-container">
-        <div className="footer-brand">BOOM<span>.</span></div>
-        <p>PERFORMANCE MODPACK / BUILD 00.1 / 2026</p>
-        <div className="footer-links"><button onClick={() => handlePlaceholder("DISCORD")}>DISCORD</button><button onClick={() => handlePlaceholder("CHANGELOG")}>CHANGELOG</button><a href="#top">BACK TO TOP ↑</a></div>
+        <div className="footer-brand">BOOM<span>.</span><small>DICIPTAKAN OLEH BOOM</small></div>
+        <p>CREATOR / BOOM / PERFORMANCE MODPACK / 2026</p>
+        <div className="footer-links"><button onClick={() => handlePlaceholder("INSTAGRAM BOOM")}>IG</button><button onClick={() => handlePlaceholder("TIKTOK BOOM")}>TIKTOK</button><button onClick={() => handlePlaceholder("SALURAN WHATSAPP")}>SALURAN WA</button><button onClick={() => handlePlaceholder("GRUP COMMUNITY")}>COMMUNITY</button><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </main>
   );
