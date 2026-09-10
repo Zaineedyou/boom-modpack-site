@@ -230,7 +230,8 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
 .footer-brand { color: var(--paper); font: 800 29px/.8 "Barlow Condensed", sans-serif; letter-spacing: .04em; }
 .footer-brand span { color: var(--signal); }
 .footer-brand small { display: block; margin-top: 8px; color: var(--paper-muted); font: 700 7px/1 "DM Sans", sans-serif; letter-spacing: .13em; }
-.site-footer p { margin: 0; font-size: 8px; letter-spacing: .14em; }
+.footer-credit { margin: 0; color: var(--paper); opacity: 1; font-size: 10px; font-weight: 800; letter-spacing: .12em; transition: color .18s ease, transform .18s ease; }
+.footer-credit:hover { color: var(--signal); transform: translateY(-1px); }
 .footer-links { display: flex; align-items: center; gap: 18px; }
 .footer-links button, .footer-links a { background: transparent; color: var(--paper-muted); padding: 0; font-size: 8px; font-weight: 700; letter-spacing: .13em; cursor: pointer; transition: color .18s ease; }
 .footer-links button:hover, .footer-links a:hover { color: var(--signal); }
@@ -308,6 +309,7 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--signal); outlin
   .final-cta { display: block; }
   .final-cta .button-primary { margin-top: 25px; }
   .site-footer { display: grid; gap: 17px; padding-block: 29px; }
+  .footer-credit { font-size: 9px; line-height: 1.4; }
   .footer-links { gap: 12px; flex-wrap: wrap; }
 }
 @media (prefers-reduced-motion: reduce) {
