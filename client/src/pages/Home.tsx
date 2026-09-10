@@ -222,7 +222,7 @@ export default function Home() {
 
       <footer className="site-footer site-container">
         <div className="footer-brand">BOOM<span>.</span><small>DICIPTAKAN OLEH BOOM</small></div>
-        <a className="footer-credit" href="https://github.com/Zaineedyou/boom-modpack-site" target="_blank" rel="noreferrer">ARR · © 2026 BOOM · BUILT BY ZAINEEDYOU</a>
+        <a className="footer-credit" href="https://github.com/Zaineedyou" target="_blank" rel="noreferrer">© 2026 BOOM. All Rights Reserved. Built by Zaineedyou</a>
         <div className="footer-links"><a href="https://www.youtube.com/@boomdz1" target="_blank" rel="noreferrer">YOUTUBE</a><a href="https://www.tiktok.com/@whatboom_?_r=1&_t=ZS-99cZTlqCHP2" target="_blank" rel="noreferrer">TIKTOK</a><a href="https://chat.whatsapp.com/E7jwnoqvYt0B2z5k4OiF1V?s=cl&p=a&ilr=2" target="_blank" rel="noreferrer">COMMUNITY WA</a><a href="#top">BACK TO TOP ↑</a></div>
       </footer>
     </main>
