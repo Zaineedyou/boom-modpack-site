@@ -18,7 +18,7 @@ import {
 const STORAGE = "/assets";
 
 const packCategories = [
-  { key: "modpack", label: "MODPACK", count: "08" },
+  { key: "modpack", label: "MODPACK", count: "09" },
   { key: "texture", label: "TEXTURE PACK", count: "03" },
   { key: "shader", label: "SHADERPACK", count: "02" },
 ] as const;
@@ -33,6 +33,7 @@ const packs = {
     { name: "MODPACK V12 BY BOOM", description: "Versi 12 gratis untuk Minecraft 26.1.2, siap diunduh dari MediaFire.", badge: "MODPACK", meta: "V26.1.2 / MEDIAFIRE", tone: "red", link: "https://www.mediafire.com/file/w7s9xcdlukcr8o8/MP+FREE+V12+26.1.2.zip/file", placeholder: false },
     { name: "MODPACK V9 BY BOOM", description: "Modpack Boom untuk Minecraft 1.21.11 dengan fokus survival dan performa.", badge: "MODPACK", meta: "V1.21.11 / MEDIAFIRE", tone: "dark", link: "https://www.mediafire.com/file/yw53p9ldfml6u8w/Modpack+1.21.11+v9+by+boom.zip/file", placeholder: false },
     { name: "MODPACK SODIUM V6 BY BOOM", description: "Build berbasis Sodium untuk pengalaman FPS yang lebih ringan dan responsif.", badge: "MODPACK", meta: "V6 / MEDIAFIRE", tone: "red", link: "https://www.mediafire.com/file/ymyh2ebdtgobo4k/Modpack+Sodium+V6+by+Boom.zip/file", placeholder: false },
+    { name: "BOOM SERIES HC", description: "Modpack survival hardcore dengan banyak mod, fitur tambahan, optimasi, dan peningkatan gameplay untuk bikin pengalaman survival makin seru. Cukup berat untuk HP low-end; disarankan menggunakan device mid-range ke atas agar lebih nyaman dan stabil.", badge: "MODPACK", meta: "SURVIVAL HARDCORE / DRIVE", tone: "dark", link: "https://drive.google.com/file/d/1bIopEYzWk1F2b1WqMpGrJaADfDmdMx6w/view?usp=drivesdk", placeholder: false },
   ],
   texture: [
     { name: "TXT BOOM 1.21.11", description: "Texture pack untuk versi 1.21.11 sampai 26.2. Masih work untuk rentang versi tersebut.", badge: "TEXTURE PACK", meta: "V1.21.11 — V26.2", tone: "red", link: "https://www.mediafire.com/file/nq579zbbsmlfp9w/TXT+1.21.11-26.2+BY+BOOM.zip/file", placeholder: false },
